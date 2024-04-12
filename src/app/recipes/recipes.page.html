@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color = "primary">
+    <ion-title>recipes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <!--ion-item *ngFor= "let recipe of recipes" [routerLink] ="['./', recipe.id]">
+      <ion-avatar slot="start">
+        <ion-img [src]= "recipe.imageUrl"></ion-img>
+      </ion-avatar>
+      <ion-label>{{recipe.title}}</ion-label>
+    </ion-item e kemi barte kete pjese te kodit tek recepie-item-->
+
+    <app-recipe-item *ngFor= "let recipe of recipes" [recipeItem]= "recipe"> </app-recipe-item>
+  </ion-list>
+</ion-content>
